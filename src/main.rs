@@ -3,7 +3,7 @@ use std::env;
 
 fn main() {
     // let args: Vec<_> = env::args().collect();
-    let day = "01";
+    let day = "01b";
     let cmd = Command::new("cargo")
         .args(&["run", "--bin", &day])
         .output()

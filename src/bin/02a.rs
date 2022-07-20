@@ -1,10 +1,10 @@
-use std::env;
+
 use std::fs::File;
 use std::io::{BufReader, BufRead};
 
 fn main() -> std::io::Result<()> {
-    let INPUT_PATH = "inputs/02.in";
-    let input_f = File::open(INPUT_PATH)?;
+    let input_path = "inputs/02.in";
+    let input_f = File::open(input_path)?;
     let reader = BufReader::new(input_f);
     
     let mut depth = 0;
